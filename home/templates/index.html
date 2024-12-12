@@ -1,0 +1,24 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alexa</title>
+    <link rel="stylesheet" href="{% static "style.css" %}">
+</head>
+<body>
+    <div class="container">
+        <div class="app-container">
+            <div class="headings-container">
+                 <h1>Hii, This is web Alexa.</h1>
+            </div>
+            <div class="interaction-container">
+                <img src="\static\image.png" alt="Alexa">
+                <form method="Post">
+                    {% csrf_token %}
+                    <button class="btn1" name="btn1" id="convertbtn" value="1">Start</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
